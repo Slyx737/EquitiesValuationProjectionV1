@@ -1,6 +1,6 @@
 # Equity Valuation Projections 
 
-Equity Valuation Projections (EquityValuationProjections) is a Python script that provides a template for projecting the future share price of a company based on historical revenue, earnings growth, dilution, and industry-average valuations. The algorithm calculates projected revenue, earnings per share (EPS), net income, enterprise value, and future share price, offering insights into potential investment opportunities.
+Equity Valuation Projections is a Python script that provides a template for projecting the future share price of a company based on historical revenue, earnings growth, dilution, and industry-average valuations. The algorithm calculates projected revenue, earnings per share (EPS), net income, enterprise value, and future share price, offering insights into potential investment opportunities.
 
 ## Overview
 
