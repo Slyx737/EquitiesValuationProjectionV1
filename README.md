@@ -4,6 +4,8 @@ Equity Valuation Projections (EquityValuationProjections) is a Python script tha
 
 ## Overview
 
+This repository contains an algorithm for projecting future share prices based on historical revenue and earnings per share (EPS) data. The algorithm calculates the compound annual growth rate (CAGR) of revenue and uses a flat rate forward projection based on the average of the flat rate improvement in historical EPS.
+
 Investors often seek to understand the potential future value of a company's shares based on its historical financial performance and industry trends. EquityValuationProjections is designed to assist in this analysis by providing a simplified model for projecting a company's future share price.
 
 The algorithm takes into account the following inputs:
@@ -20,6 +22,9 @@ Based on these inputs, the algorithm calculates the following projections:
 - Projected net income
 - Projected enterprise value
 - Projected share price
+
+## Handling Negative EPS
+The algorithm is designed to handle cases where a company has negative EPS and is gradually improving its earnings over time. By calculating the average rate of improvement in earnings based on historical data, the algorithm can project the path to profitability and future positive EPS for companies that are currently experiencing negative EPS. This makes the algorithm versatile and capable of handling a wide range of scenarios, including companies that are transitioning from losses to profits.
 
 ## Usage
 
