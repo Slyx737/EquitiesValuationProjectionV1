@@ -2,7 +2,7 @@ def project_future_share_price(historical_revenue, historical_eps, shares_outsta
     # Calculate revenue CAGR
     revenue_cagr = (historical_revenue[-1] / historical_revenue[0]) ** (1 / (len(historical_revenue) - 1)) - 1
     
-    # Calculate average rate of improvement in earnings (EPS)
+    # Calculate the average rate of improvement in earnings (EPS)
     eps_growth_rates = [(historical_eps[i] - historical_eps[i - 1]) / abs(historical_eps[i - 1]) for i in range(1, len(historical_eps))]
     avg_eps_growth_rate = sum(eps_growth_rates) / len(eps_growth_rates)
     
@@ -19,7 +19,7 @@ def project_future_share_price(historical_revenue, historical_eps, shares_outsta
     # Adjust for potential dilution
     adjusted_shares_outstanding = shares_outstanding * (1 + dilution_rate) ** years
     
-    # Calculate projected share price
+    # Calculate the projected share price
     projected_share_price = projected_enterprise_value / adjusted_shares_outstanding
     
     return projected_share_price
